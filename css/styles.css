@@ -16,22 +16,54 @@ header, section, footer {
 }
 
 h1 {
-	font-size: 1.8em;
+	font-size: 1.4em;
 	font-weight: 400;
 	line-height: 1.3em;
 }
 
 .serif {
 	font-family: 'EB Garamond', serif;
-	font-size: 2.05rem;
+	font-size: 1.58rem;
 	letter-spacing: .02em;
 	margin-left: -.03em;
 	margin-right: -.03em;
+	border-bottom: 1px solid blue;
 }
 
+/*
+.serif:hover {
+	border-bottom: 1px solid blue;
+}
+*/
 
 ol li {
 	padding-bottom: .5em;
+}
+
+
+
+ol {  
+    counter-reset: my-counter;
+    list-style-type: none;
+}
+ol li:before {  
+    content: counter(my-counter) ".";
+    counter-increment: my-counter;
+    font-family: 'EB Garamond', serif;
+    padding-left: 0;
+    padding-right: 1.4em;
+    margin-left: -1em;
+}
+
+.tag {
+	font-size: .5em;
+	display: inline-block;
+	border-style: solid;
+	border-radius: 3px;
+	border-color: blue;
+	border-width: 1px;
+	padding: .5em;
+	margin: .2em;
 }
 
 /*font-family: 'Assistant', sans-serif;*/
@@ -43,8 +75,8 @@ ol li {
 }
 
 address {
-	text-decoration: none;
-	font-size: .7em;
+	font-style: normal;
+	font-size: .5em;
 }
 
 

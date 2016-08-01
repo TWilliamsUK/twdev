@@ -64,6 +64,7 @@ ol li:before {
 	border-width: 1px;
 	padding: .5em;
 	margin: .2em;
+	vertical-align: 25%;
 }
 
 /*font-family: 'Assistant', sans-serif;*/

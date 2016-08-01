@@ -67,6 +67,20 @@ ol li:before {
 	vertical-align: 25%;
 }
 
+
+/*Social*/
+
+#mail {
+	vertical-align: -4%;
+}
+
+#linkedin {
+	vertical-align: 5%;
+}
+
+
+
+
 /*font-family: 'Assistant', sans-serif;*/
 
 .icon {

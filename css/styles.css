@@ -19,12 +19,16 @@ html {
 
 
 
-header, section, footer {
+section, footer {
 	margin: 1.5em;
 }
 
 section.main-content {
 	margin-right: 0;
+}
+
+header.intro {
+	margin: 1.5em 1.8em 2em 1.8em;
 }
 
 h1 {
@@ -49,7 +53,7 @@ h1 {
 */
 
 ol li {
-	padding-bottom: 1em;
+	padding-top: 1em;
 }
 
 
@@ -96,10 +100,20 @@ ol li:before {
 /*font-family: 'Assistant', sans-serif;*/
 
 .icon {
-	width: .7em;
-	height: .7em;
-	padding-right: 1em;
+	width: 1.6;
+	height: 1.6em;
+	padding: .4em
 }
+
+.social a .icon{
+	margin-right: .5em;
+}
+
+.social a:first-child .icon {
+	margin-left: -.3em;
+}
+
+
 
 address {
 	font-style: normal;
@@ -127,7 +141,7 @@ a {...}
 .accordion-toggle {cursor: pointer;}
 .accordion-content {
 	display: none;
-	margin-bottom: 3em;
+	margin-bottom: 2em;
 }
 /*.accordion-content.default {display: block;}*/
 
@@ -142,18 +156,20 @@ a {...}
 
 .info {
 	width: 50%;
-	font-size: .5em;
+	font-size: .65em;
 	line-height: 1.5em;
 	padding: 2em 9em 2em 2.3em;
 }
 
 .thumb {
 	width: 50%;
-	height: 35vw;
+	height: 45vw;
+	margin-top: -1.5em;
 }
 
 .thumb.calculator {
-	background: #51576a url("../img/test.jpg") no-repeat right top;
+	background: #fff url("../img/test.jpg") no-repeat left bottom;
+	background-size: contain;
 }
 
 

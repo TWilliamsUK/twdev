@@ -15,6 +15,10 @@ header, section, footer {
 	margin: 1.5em;
 }
 
+section.main-content {
+	margin-right: 0;
+}
+
 h1 {
 	font-size: 1.4em;
 	font-weight: 400;
@@ -116,8 +120,21 @@ a {...}
 .accordion-content {display: none;}
 .accordion-content.default {display: block;}
 
+.project {
+	display: inline-flex;
+}
 
+.info {
+	width: 25%;
+}
 
+.thumb {
+	width: 50%;
+}
+
+.thumb.calculator {
+	background: #51576a url("../img/test.jpg") no-repeat right top;
+}
 
 
 

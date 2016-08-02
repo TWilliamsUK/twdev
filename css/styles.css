@@ -9,7 +9,15 @@ Tags: Portfolio, Minimal, Typographic
 html {
 	font-family: 'Inconsolata', monospace;
 	font-size: 2em;
+	/* apply a natural box layout model to all elements, but allowing components to change */
+	box-sizing: border-box;
 }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
 
 header, section, footer {
 	margin: 1.5em;
@@ -55,7 +63,7 @@ ol li:before {
     counter-increment: my-counter;
     font-family: 'EB Garamond', serif;
     padding-left: 0;
-    padding-right: 1.4em;
+    padding-right: 1.5em;
     margin-left: -1em;
 }
 
@@ -117,19 +125,31 @@ a {...}
 
 /***** Accordian *****/
 .accordion-toggle {cursor: pointer;}
-.accordion-content {display: none;}
+.accordion-content {
+	display: none;
+	margin-bottom: 3em;
+}
 /*.accordion-content.default {display: block;}*/
 
 .project {
 	display: inline-flex;
 }
 
+.project-hr {
+	margin: 0 0 0 -5em;
+	width: auto;
+}
+
 .info {
-	width: 25%;
+	width: 50%;
+	font-size: .5em;
+	line-height: 1.5em;
+	padding: 2em 9em 2em 2.3em;
 }
 
 .thumb {
 	width: 50%;
+	height: 35vw;
 }
 
 .thumb.calculator {

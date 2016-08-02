@@ -155,20 +155,20 @@ a {...}
 }
 
 .info {
-	width: 50%;
+	width: 40%;
 	font-size: .65em;
 	line-height: 1.5em;
-	padding: 2em 9em 2em 2.3em;
+	padding: 2em 2em 2em 2.3em;
 }
 
 .thumb {
-	width: 50%;
+	width: 60%;
 	height: 45vw;
 	margin-top: -1.5em;
 }
 
 .thumb.calculator {
-	background: #fff url("../img/test.jpg") no-repeat left bottom;
+	background: #fff url("../img/test.jpg") no-repeat right bottom;
 	background-size: contain;
 }
 

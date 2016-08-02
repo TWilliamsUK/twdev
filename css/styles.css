@@ -54,6 +54,8 @@ h1 {
 
 ol li {
 	padding-top: 1em;
+	z-index: 100;
+	position: relative;
 }
 
 
@@ -158,21 +160,36 @@ a {...}
 	width: 40%;
 	font-size: .65em;
 	line-height: 1.5em;
-	padding: 2em 2em 2em 2.3em;
+	padding: 2em 3em 2em 2.3em;
 }
 
 .thumb {
 	width: 60%;
 	height: 45vw;
-	margin-top: -1.5em;
-}
-
-.thumb.calculator {
-	background: #fff url("../img/test.jpg") no-repeat right bottom;
-	background-size: contain;
+	margin-top: -.5em;
 }
 
 
+
+.thumb.calculator {background: #fff url("../img/calculator.jpg") no-repeat left bottom;}
+.thumb.taste {background: #fff url("../img/taste.jpg") no-repeat left bottom;}
+.thumb.photoaid {background: #fff url("../img/photoaid.jpg") no-repeat left bottom;}
+.thumb.typetypetype {background: #fff url("../img/typetypetype.jpg") no-repeat left bottom;}
+.thumb.goodgraphicdesign {background: #fff url("../img/goodgraphicdesign.jpg") no-repeat left bottom;}
+.thumb.dailyui {background: #fff url("../img/dailyui.jpg") no-repeat left bottom;}
+.thumb.zengarden {background: #fff url("../img/zengarden.jpg") no-repeat left bottom;}
+.thumb.williamsandco {background: #fff url("../img/williamsandco.jpg") no-repeat left bottom;}
+
+.thumb.calculator,
+.thumb.taste,
+.thumb.photoaid,
+.thumb.typetypetype,
+.thumb.goodgraphicdesign,
+.thumb.dailyui,
+.thumb.zengarden,
+.thumb.williamsandco {
+	background-size: auto 100%;
+}
 
 
 Always name your elements properly based on their use not on their properties

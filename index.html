@@ -46,6 +46,7 @@
 			<li class="accordion-toggle">Calculator
 			<div class="tag">Javascript</div><div class="tag">UI</div></li>
 			<div class="accordion-content default">
+		    
 		    <div class="project">
 		    	<div class="info">
 			    	<p>A javascript calculator built to perform as a web app with teh purpose of learning some basic javascript and flexing some UI CSS.</p>
@@ -54,31 +55,77 @@
 		    	<div class="thumb calculator">
 		    	</div>
 		    </div>
+
 		    <hr class="project-hr">
+
 		  </div>
 
 			<li class="accordion-toggle">TASTE Restaurant
 			<div class="tag">SASS</div><div class="tag">JQuery</div></li>
 			<div class="accordion-content default">
-		    <p>Test</p>
+		    
+		    <div class="project">
+		    	<div class="info">
+			    	<p>A javascript calculator built to perform as a web app with teh purpose of learning some basic javascript and flexing some UI CSS.</p>
+			    	<p>Go to <a href="xxx" target="blank">site</a>.</p>			    	
+		    	</div>
+		    	<div class="thumb taste">
+		    	</div>
+		    </div>
+		    
+		    <hr class="project-hr">
+
 		  </div>
 
 			<li class="accordion-toggle">Photoaid
 			<div class="tag">Javascript</div><div class="tag">PHP</div></li>
 			<div class="accordion-content default">
-		    <p>Test</p>
+		    
+		    <div class="project">
+		    	<div class="info">
+			    	<p>A javascript calculator built to perform as a web app with teh purpose of learning some basic javascript and flexing some UI CSS.</p>
+			    	<p>Go to <a href="xxx" target="blank">site</a>.</p>			    	
+		    	</div>
+		    	<div class="thumb photoaid">
+		    	</div>
+		    </div>
+		    
+		    <hr class="project-hr">
+
 		  </div>
 
 			<li class="accordion-toggle">TypeTypeType
 			<div class="tag">Wordpress</div><div class="tag">PHP</div></li>
 			<div class="accordion-content default">
-		    <p>Test</p>
+		    
+		    <div class="project">
+		    	<div class="info">
+			    	<p>A javascript calculator built to perform as a web app with teh purpose of learning some basic javascript and flexing some UI CSS.</p>
+			    	<p>Go to <a href="xxx" target="blank">site</a>.</p>			    	
+		    	</div>
+		    	<div class="thumb typetypetype">
+		    	</div>
+		    </div>
+		    
+		    <hr class="project-hr">
+
 		  </div>
 
 			<li class="accordion-toggle">Good* Graphic Design
 			<div class="tag">JQuery</div></li>
 			<div class="accordion-content default">
-		    <p>Test</p>
+		    
+		    <div class="project">
+		    	<div class="info">
+			    	<p>A javascript calculator built to perform as a web app with teh purpose of learning some basic javascript and flexing some UI CSS.</p>
+			    	<p>Go to <a href="xxx" target="blank">site</a>.</p>			    	
+		    	</div>
+		    	<div class="thumb goodgraphicdesign">
+		    	</div>
+		    </div>
+		    
+		    <hr class="project-hr">
+
 		  </div>
 
 			<!--<li>48 Faces
@@ -90,19 +137,52 @@
 			<li class="accordion-toggle">Daily UI
 			<div class="tag">UI</div><div class="tag">Sketch</div><div class="tag">Keynote</div></li>
 			<div class="accordion-content default">
-		    <p>Test</p>
+		    
+		    <div class="project">
+		    	<div class="info">
+			    	<p>A javascript calculator built to perform as a web app with teh purpose of learning some basic javascript and flexing some UI CSS.</p>
+			    	<p>Go to <a href="xxx" target="blank">site</a>.</p>			    	
+		    	</div>
+		    	<div class="thumb dailyui">
+		    	</div>
+		    </div>
+		    
+		    <hr class="project-hr">
+
 		  </div>
 
 			<li class="accordion-toggle">Zen Garden
 			<div class="tag">CSS3</div></li>
 			<div class="accordion-content default">
-		    <p>Test</p>
+		    
+		    <div class="project">
+		    	<div class="info">
+			    	<p>A javascript calculator built to perform as a web app with teh purpose of learning some basic javascript and flexing some UI CSS.</p>
+			    	<p>Go to <a href="xxx" target="blank">site</a>.</p>			    	
+		    	</div>
+		    	<div class="thumb zengarden">
+		    	</div>
+		    </div>
+		    
+		    <hr class="project-hr">
+
 		  </div>
 
 			<li class="accordion-toggle">williams&amp;co
 			<div class="tag">HTML5</div><div class="tag">CSS3</div></li>
 			<div class="accordion-content default">
-		    <p>Test</p>
+		    
+		    <div class="project">
+		    	<div class="info">
+			    	<p>A javascript calculator built to perform as a web app with teh purpose of learning some basic javascript and flexing some UI CSS.</p>
+			    	<p>Go to <a href="xxx" target="blank">site</a>.</p>			    	
+		    	</div>
+		    	<div class="thumb williamsandco">
+		    	</div>
+		    </div>
+		    
+		    <hr class="project-hr">
+
 		  </div>
 
 		</ol>
@@ -137,16 +217,29 @@
 
   <!-- Accordian -->
   <script type="text/javascript">
+
 	  $(document).ready(function($) {
 	    $('#accordion').find('.accordion-toggle').click(function(){
 
 	      //Expand or collapse this panel
-	      $(this).next().slideToggle('fast');
+	      $(this).next().slideToggle(600);
 
 	      //Hide the other panels
-	      $(".accordion-content").not($(this).next()).slideUp('fast');
+	      $(".accordion-content").not($(this).next()).slideUp(600);
 
-	    });
+			});
+
+
+	    //Translate browser window vertically to keep content in view
+	    $('.accordion-toggle').bind('click',function(){
+          var self = this;
+          setTimeout(function() {
+              theOffset = $(self).offset();
+              $('body,html').animate({ scrollTop: theOffset.top }, 600);
+          }, 601);
+      });
+
+
 	  });
 	</script>
 

@@ -181,14 +181,12 @@
 		    	</div>
 		    </div>
 		    
-		    <hr class="project-hr">
-
 		  </div>
 
 		</ol>
 	</section>
 
-	<hr>
+	<hr class="accordion-last-hr">
 
 	<section class="social">
 		<a href="mailto:info@tomwillia.ms" target="_blank"><img class="icon" id="mail" src="img/mail-icon.svg" alt="mail-icon"></a>
@@ -235,7 +233,7 @@
           var self = this;
           setTimeout(function() {
               theOffset = $(self).offset();
-              $('body,html').animate({ scrollTop: theOffset.top }, 600);
+              $('body,html').animate({ scrollTop: theOffset.top -30 }, 600);
           }, 601);
       });
 

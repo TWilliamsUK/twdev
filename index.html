@@ -16,6 +16,8 @@
 	<link rel="stylesheet" href="css/styles.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800|Inconsolata:400,700|EB+Garamond" rel="stylesheet">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
   <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -37,26 +39,64 @@
 
 	<hr>
 
+
 	<section>
-		<ol>
-			<li>Calculator
+		<ol id="accordion">
+
+			<li class="accordion-toggle">Calculator
 			<div class="tag">Javascript</div><div class="tag">UI</div></li>
-			<li>TASTE Restaurant
+			<div class="accordion-content default">
+		    <p>Test</p>
+		  </div>
+
+			<li class="accordion-toggle">TASTE Restaurant
 			<div class="tag">SASS</div><div class="tag">JQuery</div></li>
-			<li>Photoaid
+			<div class="accordion-content default">
+		    <p>Test</p>
+		  </div>
+
+			<li class="accordion-toggle">Photoaid
 			<div class="tag">Javascript</div><div class="tag">PHP</div></li>
-			<li>TypeTypeType
+			<div class="accordion-content default">
+		    <p>Test</p>
+		  </div>
+
+			<li class="accordion-toggle">TypeTypeType
 			<div class="tag">Wordpress</div><div class="tag">PHP</div></li>
-			<li>Good* Graphic Design
+			<div class="accordion-content default">
+		    <p>Test</p>
+		  </div>
+
+			<li class="accordion-toggle">Good* Graphic Design
 			<div class="tag">JQuery</div></li>
-			<li>48 Faces
+			<div class="accordion-content default">
+		    <p>Test</p>
+		  </div>
+
+			<!--<li>48 Faces
 			<div class="tag">Javascript</div><div class="tag">UI</div></li>
-			<li>Daily UI
+			<div class="accordion-content default">
+		    <p>Test</p>
+		  </div>-->
+
+			<li class="accordion-toggle">Daily UI
 			<div class="tag">UI</div><div class="tag">Sketch</div><div class="tag">Keynote</div></li>
-			<li>Zen Garden
+			<div class="accordion-content default">
+		    <p>Test</p>
+		  </div>
+
+			<li class="accordion-toggle">Zen Garden
 			<div class="tag">CSS3</div></li>
-			<li>williams&amp;co
+			<div class="accordion-content default">
+		    <p>Test</p>
+		  </div>
+
+			<li class="accordion-toggle">williams&amp;co
 			<div class="tag">HTML5</div><div class="tag">CSS3</div></li>
+			<div class="accordion-content default">
+		    <p>Test</p>
+		  </div>
+
 		</ol>
 	</section>
 
@@ -86,6 +126,21 @@
 
 	<!-- scripts -->
   <script src="js/scripts.js"></script>
+
+  <!-- Accordian -->
+  <script type="text/javascript">
+	  $(document).ready(function($) {
+	    $('#accordion').find('.accordion-toggle').click(function(){
+
+	      //Expand or collapse this panel
+	      $(this).next().slideToggle('fast');
+
+	      //Hide the other panels
+	      $(".accordion-content").not($(this).next()).slideUp('fast');
+
+	    });
+	  });
+	</script>
 
 </body>
 

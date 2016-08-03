@@ -27,8 +27,9 @@ section.main-content {
 	margin-right: 0;
 }
 
-header.intro {
+header {
 	margin: 1.5em 1.8em 2em 1.8em;
+	max-width: 1080px;
 }
 
 h1 {
@@ -37,8 +38,17 @@ h1 {
 	line-height: 1.3em;
 }
 
-.serif {
+
+
+/*.underline:hover {
+	border-bottom: none;
+}*/
+
+
+h1 a {
 	font-family: 'EB Garamond', serif;
+	text-decoration: none;
+	color: #000;
 	font-size: 1.58rem;
 	letter-spacing: .02em;
 	margin-left: -.03em;
@@ -102,7 +112,7 @@ ol li:before {
 /*font-family: 'Assistant', sans-serif;*/
 
 .icon {
-	width: 1.6;
+	width: 1.6em;
 	height: 1.6em;
 	padding: .4em
 }
@@ -140,7 +150,6 @@ a {...}
 #footer {...}
 
 /***** Accordian *****/
-.accordion-toggle {cursor: pointer;}
 .accordion-content {
 	display: none;
 	margin-bottom: 2em;
@@ -149,6 +158,7 @@ a {...}
 
 .project {
 	display: inline-flex;
+	width: 100%;
 }
 
 .project-hr {
@@ -158,6 +168,7 @@ a {...}
 
 .info {
 	width: 40%;
+	max-width: 500px;
 	font-size: .65em;
 	line-height: 1.5em;
 	padding: 0 3em 1em 1.7em;
@@ -165,7 +176,7 @@ a {...}
 
 .thumb {
 	width: 60%;
-	height: 40vw;
+	height: 500px;
 	margin-top: -.5em;
 }
 
@@ -198,5 +209,120 @@ ol .accordion-content:last-child .project .thumb {
 	background-size: auto 100%;
 }
 
+
+
+@media all and (min-width: 1300px) {
+
+
+	.thumb {
+			width: 100%;
+			height: 600px;
+			max-width: 1200px;
+	}
+
+	.thumb.calculator,
+	.thumb.taste,
+	.thumb.photoaid,
+	.thumb.typetypetype,
+	.thumb.goodgraphicdesign,
+	.thumb.dailyui,
+	.thumb.zengarden,
+	.thumb.williamsandco {
+		background-size: contain;
+	}
+
+}
+
+
+@media all and (max-width: 1000px) {
+
+	.project {
+		display: inline-flex;
+		flex-direction: column;
+	}
+
+	.info {
+		width: 75%;
+	}
+
+	.thumb {
+			width: 100%;
+	}
+
+
+}
+
+
+@media all and (max-width: 550px) {
+
+	h1 {
+		font-size: 1em;
+	}
+
+	footer, header {
+		margin: 1em;
+	}
+
+	section.main-content {
+		margin: 0;
+	}
+
+	ol li:before {
+		display: none;
+	}
+
+	ol {
+		padding: 0;
+	}
+
+	h1 a {
+			font-size: 1.1em;
+	}
+
+	.info {
+		width: 100%;
+		font-size: .5em;
+	}
+
+	li {
+		margin-left: 1em;
+		font-size: .8em;
+	}
+
+	.thumb {
+		height: 350px;
+
+	}
+
+	.social {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.icon {
+		width: 2.2em;
+		height: 2.2em;
+		padding: 0 .7em;
+	}
+
+	.social a .icon{
+		margin-right: 0;
+	}
+
+	.social a:first-child .icon {
+		margin-left: 0;
+	}
+
+	ol .accordion-content:last-child .project .thumb {
+		position: relative;
+		top: 2em;
+		margin-top: -2.3em;
+		margin-left: 2em;
+		z-index: -50;
+	}
+
+
+}
 
 Always name your elements properly based on their use not on their properties

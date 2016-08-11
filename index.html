@@ -7,21 +7,12 @@
 
 	<meta charset="utf-8">
 
-	<title>TWilliamsUK </title>
+	<title>Tom Williams &mdash; Creative Developer </title>
 
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/styles.css">
-
-	<link href="https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800|Inconsolata:400,700|EB+Garamond" rel="stylesheet">
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-
-  <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+	<link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
@@ -192,57 +183,26 @@
 	<hr class="accordion-last-hr">
 
 	<section class="social">
-		<a href="mailto:info@tomwillia.ms" target="_blank"><img class="icon" id="mail" src="img/mail-icon.svg" alt="mail-icon"></a>
-		<a href="http://linkedin.com/in/TWilliamsUK" target="_blank"><img class="icon" id="linkedin" src="img/linkedin-icon.svg" alt="linkedin-icon"></a>
-		<a href="https://twitter.com/TWilliamsUK" target="_blank"><img class="icon" id="twitter" src="img/twitter-icon.svg" alt="twitter-icon"></a>
-		<a href="https://twilliamsuk.github.io/notestoself" target="_blank"><img class="icon" id="ghost" src="img/ghost-icon.svg" alt="ghost-icon"></a>
-		<a href="https://github.com/TWilliamsUK" target="_blank"><img class="icon" id="github" src="img/github-icon.svg" alt="github-icon"></a>
+		<a href="mailto:info@tomwillia.ms" target="_blank"><img class="icon" id="mail" src="assets/img/mail-icon.svg" alt="mail-icon"></a>
+		<a href="http://linkedin.com/in/TWilliamsUK" target="_blank"><img class="icon" id="linkedin" src="assets/img/linkedin-icon.svg" alt="linkedin-icon"></a>
+		<a href="https://twitter.com/TWilliamsUK" target="_blank"><img class="icon" id="twitter" src="assets/img/twitter-icon.svg" alt="twitter-icon"></a>
+		<a href="https://twilliamsuk.github.io/notestoself" target="_blank"><img class="icon" id="ghost" src="assets/img/ghost-icon.svg" alt="ghost-icon"></a>
+		<a href="https://github.com/TWilliamsUK" target="_blank"><img class="icon" id="github" src="assets/img/github-icon.svg" alt="github-icon"></a>
 	</section>
 
 	<hr>
 		
 	<footer>
 		<address>
-			&copy;
-			<script type="text/javascript">  
-			  new Date().getFullYear()>2010&&document.write(new Date().getFullYear());
-			</script>
-			, Tom Williams &mdash; hello@twilliamsuk.io &mdash;
+			&copy; <script>document.write(new Date().getFullYear())</script>
+			Tom Williams &mdash; <a href="mailto:hello@tomwillia.ms">hello@tomwillia.ms</a> &mdash;
 
-			This website is open source, checkout the repo on Github.
+			This website is open source, checkout the <a href="https://github.com/TWilliamsUK/twdev">repo on Github</a>.
 		</address>
 	</footer>
 
 	<!-- scripts -->
-  <script src="js/scripts.js"></script>
-
-  <!-- Accordian -->
-  <script type="text/javascript">
-
-	  $(document).ready(function($) {
-	    $('#accordion').find('.accordion-toggle').click(function(){
-
-	      //Expand or collapse this panel
-	      $(this).next().slideToggle(600);
-
-	      //Hide the other panels
-	      $(".accordion-content").not($(this).next()).slideUp(600);
-
-			});
-
-
-	    //Translate browser window vertically to keep content in view
-	    $('.accordion-toggle').bind('click',function(){
-          var self = this;
-          setTimeout(function() {
-              theOffset = $(self).offset();
-              $('body,html').animate({ scrollTop: theOffset.top -28 }, 600);
-          }, 601);
-      });
-
-
-	  });
-	</script>
+	<script src="assets/js/script.min.js"></script>
 
 </body>
 

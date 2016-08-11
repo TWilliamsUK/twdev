@@ -35,3 +35,9 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Packaged dependencies #
+#########################
+node_modules/
+bower_components/
+ARCHIVE/

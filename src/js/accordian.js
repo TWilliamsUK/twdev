@@ -13,7 +13,7 @@ $(document).ready(function($) {
 		var self = this;
 		setTimeout(function() {
 			theOffset = $(self).offset();
-			$('body,html').animate({ scrollTop: theOffset.top -28 }, 600);
+			$('body,html').animate({ scrollTop: theOffset.top -20 }, 600);
 		}, 601);
 	});
 });

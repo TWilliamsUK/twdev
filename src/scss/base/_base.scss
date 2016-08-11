@@ -24,26 +24,33 @@ h1 {
     margin: 0 -.03em;
     border-bottom: $bs;
   }
-}
-
-ol {  
-    counter-reset: my-counter;
-    list-style-type: none;
-}
-
-li {
-  padding: 1em 0;
-  z-index: 100;
-  position: relative;
-  &:before {  
-    content: counter(my-counter) ".";
-    counter-increment: my-counter;
-    font-family: $garamond;
-    padding-left: 0;
-    padding-right: 1.5em;
-    margin-left: -1em;
+  @include mobile {
+    font-size: 1em;
   }
 }
 
-
-
+ol {  
+  counter-reset: my-counter;
+  list-style-type: none;
+  li {
+    padding: 1em 0;
+    z-index: 100;
+    position: relative;
+    &:before {  
+      content: counter(my-counter) ".";
+      counter-increment: my-counter;
+      font-family: $garamond;
+      padding-left: 0;
+      padding-right: 1.5em;
+      margin-left: -1em;
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+  @include mobile {
+    padding: 0;
+    margin-left: 1em;
+    font-size: .8em;
+  }
+}

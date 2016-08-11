@@ -1,0 +1,10 @@
+
+@import 'https://fonts.googleapis.com/css?family=EB+Garamond|Inconsolata:400,700';
+
+.underline {
+  &:hover {
+    padding-bottom: .25em;
+    border-bottom: $bs;
+    cursor: pointer;
+  }
+}

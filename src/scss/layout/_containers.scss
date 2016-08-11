@@ -1,0 +1,92 @@
+
+// Main Sections
+
+header {
+  margin: 1.5em 1.8em 2em 1.8em;
+  max-width: 1080px;
+}
+
+section {
+  margin: 1.5em;
+}
+
+.main-content {
+    margin-right: 0;
+  }
+
+footer {
+  margin: 1.5em;
+  line-height: .9em;
+  address {
+    font-style: normal;
+    font-size: .5em;
+  }
+}
+
+
+
+
+
+
+
+  
+// Accordian
+
+.accordion-content {
+  display: none;
+  margin-bottom: 2em;
+}
+
+.project {
+  display: inline-flex;
+  width: 100%;
+}
+
+.project-hr {
+  margin: 0 0 0 -5em;
+  width: auto;
+}
+
+.info {
+  width: 40%;
+  max-width: 500px;
+  font-size: .65em;
+  line-height: 1.5em;
+  padding: 0 3em 1em 1.7em;
+}
+
+.thumb {
+  width: 60%;
+  height: 500px;
+  margin-top: -.5em;
+}
+
+ol .accordion-content:last-child .project .thumb {
+  position: relative;
+  top: 2em;
+  margin-top: -2.3em;
+  z-index: -50;
+}
+
+// Accorian BG Imgs
+
+.thumb.calculator {background: #fff url("#{$path-img}/calculator.jpg") no-repeat left bottom;}
+.thumb.taste {background: #fff url("#{$path-img}/taste.jpg") no-repeat left bottom;}
+.thumb.photoaid {background: #fff url("#{$path-img}/photoaid.jpg") no-repeat left bottom;}
+.thumb.typetypetype {background: #fff url("#{$path-img}/typetypetype.jpg") no-repeat left bottom;}
+.thumb.goodgraphicdesign {background: #fff url("#{$path-img}/goodgraphicdesign.jpg") no-repeat left bottom;}
+.thumb.dailyui {background: #fff url("#{$path-img}/dailyui.jpg") no-repeat left bottom;}
+.thumb.zengarden {background: #fff url("#{$path-img}/zengarden.jpg") no-repeat left bottom;}
+.thumb.williamsandco {background: #fff url("#{$path-img}/williamsandco.jpg") no-repeat left bottom;}
+
+.thumb.calculator,
+.thumb.taste,
+.thumb.photoaid,
+.thumb.typetypetype,
+.thumb.goodgraphicdesign,
+.thumb.dailyui,
+.thumb.zengarden,
+.thumb.williamsandco {
+  background-size: auto 100%;
+}
+

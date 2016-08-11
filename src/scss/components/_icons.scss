@@ -1,0 +1,29 @@
+
+// Social icons
+
+.social {
+	a {
+		&:first-child {
+			.icon {
+				margin-left: -.3em;
+			}
+		}
+		.icon {
+			width: 1.6em;
+			height: 1.6em;
+			padding: .4em;
+  			margin-right: .5em;
+		}
+	}
+}
+
+// Adjust individually for optical baseline
+
+#mail {
+  vertical-align: -4%;
+}
+
+#linkedin {
+  vertical-align: 5%;
+}
+

@@ -1,0 +1,49 @@
+
+// Base Styles
+
+@import '../../../bower_components/normalize.css/normalize';
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font: 2em $inconsolata;
+}
+
+h1 {
+  font-size: 1.4em;
+  font-weight: 400;
+  line-height: 1.3em;
+  a {
+    font-family: $garamond;
+    text-decoration: none;
+    color: $black;
+    font-size: 1.15em;
+    letter-spacing: .02em;
+    margin: 0 -.03em;
+    border-bottom: $bs;
+  }
+}
+
+ol {  
+    counter-reset: my-counter;
+    list-style-type: none;
+}
+
+li {
+  padding: 1em 0;
+  z-index: 100;
+  position: relative;
+  &:before {  
+    content: counter(my-counter) ".";
+    counter-increment: my-counter;
+    font-family: $garamond;
+    padding-left: 0;
+    padding-right: 1.5em;
+    margin-left: -1em;
+  }
+}
+
+
+

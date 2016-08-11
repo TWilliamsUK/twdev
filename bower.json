@@ -1,0 +1,11 @@
+{
+  "name": "Portfolio",
+  "main": "index.html",
+  "author": "Tom Williams",
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "normalize.css": "latest"
+  },
+  "private": true
+}
+

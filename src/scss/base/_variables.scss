@@ -1,0 +1,31 @@
+
+// Descriptive colour variables
+
+$white          	: #fff;
+$black          	: #000;
+$grey           	: #878787;
+$regent-st-blue 	: #0000EE;
+;
+
+// Font stacks
+
+$inconsolata		: 'Inconsolata', monospace;
+$garamond 			: 'EB Garamond', serif;
+
+//Border Radius
+
+$br 				: 3px;
+
+//Border Style
+
+$bs					: solid 1px $regent-st-blue;
+
+//Asset paths
+
+$path-img			: '../img';
+
+// Media query breakpoints
+
+$mobile-width		: 550px;
+$tablet-width		: 1000px;
+$desktop-width		: 1300px;

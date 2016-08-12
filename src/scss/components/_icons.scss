@@ -51,3 +51,15 @@
   vertical-align: 5%;
 }
 
+// SVGs
+
+svg {
+	@include mobile {
+		polyline {
+			stroke-width: 9;
+		}
+		line {
+			stroke-width: 9;
+		}
+	}
+}

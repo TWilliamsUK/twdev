@@ -8,7 +8,7 @@
 }
 
 body {
-  font: 2em $inconsolata;
+  font: 2em $hk_groteskregular;
 }
 
 h1 {
@@ -26,16 +26,16 @@ a {
   letter-spacing: .02em;
   text-decoration: none;
   color: $black;
-  margin: 0 .3em 0 -.03em;
+  margin: 0 .37em 0 -.03em;
   border-bottom: $bs;
   position: relative;
   &:after {
     content: "";
     display: inline-block;
     position: absolute;
-    background: url("../img/ext_link_2.svg") no-repeat;
-    width: .35em;
-    height: .35em;
+    background: url("../img/ext_link_1.svg") no-repeat;
+    width: .34em;
+    height: .34em;
     margin: .25em .03em;
     background-size: 100% 100%;
   }
@@ -47,6 +47,7 @@ a {
 ol {  
   counter-reset: my-counter;
   list-style-type: none;
+  margin-top: 0;
   li {
     padding: 1em 0;
     z-index: 100;

@@ -23,14 +23,15 @@
 			    transform: translate(0, -10px);
 			}
 	  		@include mobile {
-	  			width: 2.2em;
-			    height: 2.2em;
-			    padding: 0 .7em;
+	  			width: 2em;
+			    height: 2em;
+			    padding: 0 .65em;
 			    margin-right: 0;
 			}
 			transition: all .2s ease;
 		}
 		border-bottom: none;
+		margin: 0;
 	}
 	@include mobile {
 		display: flex;

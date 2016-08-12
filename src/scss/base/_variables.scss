@@ -9,8 +9,9 @@ $regent-st-blue 	: #0000EE;
 
 // Font stacks
 
-$inconsolata		: 'hk_groteskregular', sans-serif;
+$hk_groteskregular	: 'hk_groteskregular', sans-serif;
 $garamond 			: 'EB Garamond', serif;
+//$inconsolata		: 'Inconsolata', monospace;
 
 //Border Radius
 
@@ -26,6 +27,6 @@ $path-img			: '../img';
 
 // Media query breakpoints
 
-$mobile-width		: 550px;
+$mobile-width		: 605px;
 $tablet-width		: 1000px;
 $desktop-width		: 1300px;

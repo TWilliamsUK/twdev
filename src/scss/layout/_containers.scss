@@ -4,7 +4,7 @@
 header {
   margin: 2.2em 2.2em 2.9em 2.2em;
   @include mobile {
-    margin: 1em 1em 1.5em 1em;
+    margin: .75em .75em 1.3em .75em;
   }
 }
 
@@ -15,7 +15,7 @@ section {
 .main-content {
     margin-right: 0;
     @include mobile {
-      margin: .25em;
+      margin: 0;
     }
   }
 
@@ -27,7 +27,7 @@ footer {
     font-size: .5em;
   }
   @include mobile {
-    margin: 1em;
+    margin: .75em .75em 2em .75em;
   }
 }
   

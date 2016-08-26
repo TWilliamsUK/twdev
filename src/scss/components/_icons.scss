@@ -23,9 +23,9 @@
 			    transform: translate(0, -10px);
 			}
 	  		@include mobile {
-	  			width: 2em;
-			    height: 2em;
-			    padding: 0 .65em;
+	  			width: 1.8em;
+			    height: 1.8em;
+			    padding: 0 .6em;
 			    margin-right: 0;
 			}
 			transition: all .2s ease;
@@ -49,17 +49,4 @@
 
 #linkedin {
   vertical-align: 5%;
-}
-
-// SVGs
-
-svg {
-	@include mobile {
-		polyline {
-			stroke-width: 9;
-		}
-		line {
-			stroke-width: 9;
-		}
-	}
 }

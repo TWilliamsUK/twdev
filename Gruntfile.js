@@ -69,10 +69,10 @@ module.exports = function(grunt) {
             }
         },
 		uglify: {
-			js: {
+            js: {
 				files: {
 					'assets/<%=  config.jsTargetDir %>/script.js': ['<%=  config.jsSrcDir %>/libs/jquery.min.js', '<%=  config.jsSrcDir %>/**/*.js']
-				}
+				}              
 			}
 		},
         watch: {
